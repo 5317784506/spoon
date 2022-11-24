@@ -1,3 +1,6 @@
+
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Libre+Franklin:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 *,
 *::before,
 *::after {
@@ -38,11 +41,17 @@ img {
 html,
 body {
 	height: 100%;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	//font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	color: #999999;
 	background: #FAFAFA;
 	position: relative;
 	overflow-x: hidden;
+	
+	font-family:  IBM Plex Mono;
+
+
+
+	
 }
 [class*="__container"] {
 	max-width: 1410px;
@@ -52,7 +61,8 @@ body {
 	
 }
 
-	.header {
+	.header {		 
+		font-family: Libre Franklin;
 		position: fixed;
 	width: 100%;
 	top: 0;
@@ -198,8 +208,7 @@ body {
 			
 			
 			&:hover {
-				border: 2px solid #FFFFFF;
-				border-radius: 4px;
+				color: #5AB963;
 			}
 		}
 
@@ -226,8 +235,7 @@ body {
 			margin-left: 18px;
 			padding: 10px 17px;
 			&:hover {
-				border: 2px solid #FFFFFF;
-				border-radius: 4px;
+				color: #5AB963;
 			}
 			&:not(:last-child) {
 				&::before {
@@ -276,6 +284,7 @@ body {
 	// .mainpage__titel
 
 	&__titel {
+	font-family: Libre Franklin;
 	font-weight: 700;
 	font-size: 71px;
 	line-height: 78px;
@@ -327,6 +336,7 @@ body {
 	// .promoting__titel
 
 	&__titel {
+		font-family: Libre Franklin;
 		padding: 120px 0px 54px 0px;
 		max-width: 507px;
 		font-weight: 400;
@@ -430,6 +440,7 @@ body {
 	// .subtext__titel
 
 	&__titel {
+		font-family: Libre Franklin;
 		font-weight: 400;
 		font-size: 24px;
 		line-height: 36px;
@@ -459,5 +470,336 @@ body {
 }
 
 
+.menu {
 
+	// .menu__container
 
+	&__container {
+		padding-top: 123px;
+		
+	}
+
+	// .menu__leftblocks
+
+	&__leftblocks {
+		display: flex;
+		justify-content: left;
+		padding-bottom: 93px;
+		@media (max-width: 855px) {
+			display: flex;
+			flex-direction: column-reverse;
+			justify-content: center;
+
+		}
+	}
+
+	// .menu__rightblocks
+
+	&__rightblocks {
+		display: flex;
+		justify-content: right;
+		@media (max-width: 855px) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+		}
+	}
+}
+.block {
+
+	// .block__img
+
+	&__img {
+		padding: 0px 100px 0px 0px;
+		@media (max-width: 855px) {
+			padding: 30px 0px;
+		}
+		& img{
+			width: 100%;
+		height: auto;
+		}
+	}
+
+	// .block__text
+
+	&__text {
+		max-width: 370px;
+		@media (max-width: 855px) {
+			max-width: 100%;
+			text-align: center;
+		}
+	}
+
+	// .block__title
+
+	&__title {
+		font-family: Libre Franklin;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 36px;
+		padding-bottom: 25px;
+		
+		
+	}
+
+	// .block__title-span
+
+	&__title-span {
+		font-weight: 700;		
+		color: #000;
+	}
+
+	// .block__subtitle
+
+	&__subtitle {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	}
+
+	// .block__text-right
+
+	&__text-right {
+	}
+
+	// .block__title-right
+
+	&__title-right {
+	}
+
+	// .block__subtitle-right
+
+	&__subtitle-right {
+	}
+
+	// .block__img-right
+
+	&__img-right {
+		padding: 0px 0px 0px 100px;
+		@media (max-width: 855px) {
+			padding: 30px 0px;
+		}
+	}
+}
+.menu {
+
+	// .menu__text
+
+	&__text {
+		padding-top: 110px;
+	}
+
+	// .menu__title
+
+	&__title {
+		font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: #000000;
+	padding-bottom: 12px;
+
+	}
+
+	// .menu__link
+
+	&__link {
+		font-family: 'IBM Plex Mono';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #5AB963;
+	padding-bottom: 120px;
+	}
+}
+
+.party {
+
+	// .party__container
+
+	&__container {
+		padding-top: 120px;
+		padding-bottom: 150px;
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 700px) {
+			flex-direction: column;
+		}
+	}
+
+	// .party__text
+
+	&__text {
+		
+	}
+
+	// .party__title
+
+	&__title {
+	font-family: 'Libre Franklin';
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	color: #5AB963;
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		top: 10px;
+		left: 90px;
+		width: 30px;
+		height: 2px;
+		background-color:#5AB963;
+		
+		
+	}
+	}
+
+	// .party__subtitle
+
+	&__subtitle {
+		font-family: Libre Franklin;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 36px;
+		padding-bottom: 25px;
+		max-width: 483px;
+	}
+
+	// .party__subtitle-span
+
+	&__subtitle-span {
+		font-weight: 700;		
+		color: #000;
+	}
+
+	// .party__btn
+
+	&__btn {
+		margin-top: 20px;
+		color: #fff;
+		background: #5AB963;
+		border-radius: 4px;
+		//align-self: center;
+		//display: inline-flex;
+		padding: 15px 30px;
+		font-family: 'Libre Franklin';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 30px;
+		//max-width: 160px;
+		max-height: 60px;
+		@media (max-width: 700px) {
+			display: inline-flex;
+			max-width: 160px;
+			
+		}
+	}
+}
+
+.footer {
+ background-color: #000;
+ color: #fff;
+ font-family: 'Libre Franklin';
+	// .footer__container
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 120px;
+		padding-bottom: 200px;
+		@media (max-width: 540px) {
+			padding-top: 60px;
+			padding-bottom: 100px;
+		}
+		@media (max-width: 430px) {
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			
+			
+		}
+	}
+
+	// .footer__spoon
+
+	&__spoon {
+	}
+
+	// .footer__logo
+
+	&__logo {
+	}
+
+	// .footer__year
+
+	&__year {
+		padding-top: 15px;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 18px;
+		color: #666666;
+	}
+
+	// .footer__body
+
+	&__body {
+		display: flex;
+		@media (max-width: 430px) {
+			flex-direction: column;
+			text-align: center;
+			padding-top: 30px;
+		}
+	}
+
+	// .footer__info
+
+	&__info {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 18px;
+	}
+
+	// .footer__image
+
+	&__image {
+		padding-bottom: 25px;
+	}
+
+	// .footer__powered
+
+	&__powered {
+	}
+
+	// .footer__links
+
+	&__links {
+		display: flex;
+		padding-left: 40px;
+		@media (max-width: 540px) {
+			flex-direction: column;
+			padding-left: 10px;
+		}
+		@media (max-width: 430px) {
+			flex-direction: row;
+			text-align: center;
+			padding-top: 20px;
+			justify-content: center;
+		}
+	}
+
+	// .footer__link
+
+	&__link {
+		&:not(:last-child) {
+			padding: 0px 29px 0px 0px;
+		}
+	}
+}
